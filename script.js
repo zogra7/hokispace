@@ -86,11 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         const currentId = entry.target.getAttribute('id');
         navLinks.forEach(link => {
-          // Both About narrative and Photography gallery map back to the "About" nav section
-          const isAboutSubSection = (currentId === 'about' || currentId === 'gallery');
           const href = link.getAttribute('href');
-
-          if (href === `#${currentId}` || (isAboutSubSection && href === '#about')) {
+          if (href === `#${currentId}`) {
             link.classList.add('active');
           } else {
             link.classList.remove('active');
