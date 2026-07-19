@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Hokispace — Personal Journal & Portfolio</title>
+  <meta name="description" content="A personal landing page and digital journal styled with expressive editorial compositions and raw neo-brutalist aesthetics. Created by Hoki.">
+  <meta name="keywords" content="portfolio, personal website, neo-brutalism, photographic journal, developer, designer, hoki, hokispace">
+  <meta name="author" content="Hoki">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hokispace.org/">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hokispace.org/">
+  <meta property="og:title" content="Hokispace — Personal Journal & Portfolio">
+  <meta property="og:description" content="A personal landing page and digital journal styled with expressive editorial compositions and raw neo-brutalist aesthetics.">
+  <meta property="og:image" content="https://hokispace.org/neobrutalist_illustration.jpg">
+  <meta property="og:site_name" content="Hokispace">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hokispace.org/">
+  <meta name="twitter:title" content="Hokispace — Personal Journal & Portfolio">
+  <meta name="twitter:description" content="A personal landing page and digital journal styled with expressive editorial compositions and raw neo-brutalist aesthetics.">
+  <meta name="twitter:image" content="https://hokispace.org/neobrutalist_illustration.jpg">
+
+  <!-- Google Fonts: Space Grotesk (Sans-serif) & Fraunces (Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Separate External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Follower -->
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Header & Sticky Navigation (Exactly 3 anchor navigation points mapping to main regions) -->
+  <header>
+    <nav>
+      <a href="#home" class="logo" id="nav-logo">HOKISPACE.</a>
+      <button class="burger" id="mobile-burger-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navigation-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navigation-links">
+        <a href="#home" class="nav-link active" id="nav-home-btn">Home</a>
+        <a href="#about" class="nav-link" id="nav-about-btn">About</a>
+        <a href="#socials" class="nav-link" id="nav-socials-btn">Socials</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home">
+      <div class="hero-grid">
+        
+        <!-- Main Typewriter Block -->
+        <article class="card hero-card-main reveal" data-rotation="-1">
+          <div class="card-meta">
+            <span>Entry // 01</span>
+            <span>Status: Typing...</span>
+          </div>
+          <h1 id="typewriter-text">
+            <!-- Handled dynamically by JS -->
+          </h1>
+        </article>
+
+        <!-- Illustration Image Block -->
+        <aside class="card hero-card-img reveal" data-rotation="1">
+          <img src="./neobrutalist_illustration.jpg" alt="Neo-brutalist hand-drawn styled work desk with books, coffee mug, and plant">
+          <div class="img-caption">
+            <span>Workspace Snapshot</span>
+            <span>No. 408</span>
+          </div>
+        </aside>
+
+        <!-- Secondary Copy Card -->
+        <article class="card hero-card-secondary reveal" data-rotation="-0.5">
+          <p>
+            “Some days are productive, some are not. I keep moving anyway. Curiosity, consistency, and small progress matter more to me than appearing impressive.”
+          </p>
+        </article>
+
+        <!-- Small Metadata/Quick-stats block -->
+        <article class="card hero-card-small reveal" data-rotation="1.5">
+          <ul class="status-list">
+            <li class="status-item">
+              <span>Mood</span>
+              <span>☕ Curious</span>
+            </li>
+            <li class="status-item">
+              <span>Music</span>
+              <span>Lofi Beats</span>
+            </li>
+            <li class="status-item">
+              <span>Reading</span>
+              <span>Web Standards</span>
+            </li>
+            <li class="status-item">
+              <span>Weather</span>
+              <span>Slightly Cloudy</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Asymmetrical Layout Doodles -->
+      <div class="doodle-arrow-container" aria-hidden="true">
+        <span>Scroll to read</span>
+        <svg class="doodle-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-header-wrapper">
+        <h2 class="section-title reveal" data-rotation="-1.5">02 / About this human</h2>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Left Bullet Paper Docket -->
+        <article class="card about-docket reveal" data-rotation="-0.8">
+          <div class="docket-hdr">
+            <span>DOCKET_INFO</span>
+            <span class="docket-badge">SECURE</span>
+          </div>
+          <ul class="docket-details">
+            <li>
+              <strong>Primary Values</strong>
+              Honesty, persistence, building out in the open.
+            </li>
+            <li>
+              <strong>Work Philosophy</strong>
+              Build it simply first. Break it, fix it, learn why, then rebuild it.
+            </li>
+            <li>
+              <strong>Areas of Exploration</strong>
+              Semantic web layout layouts, digital accessibility, and interaction design.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Right Narrative -->
+        <article class="card about-narrative-card reveal" data-rotation="0.8">
+          <!-- Handdrawn Star doodle -->
+          <svg class="doodle-star" viewBox="0 0 100 100" width="44" height="44" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" aria-hidden="true">
+            <path d="M50 5 L63 38 L95 43 L70 65 L77 95 L50 78 L23 95 L30 65 L5 43 L37 38 Z" />
+          </svg>
+
+          <h3>A brief narrative on building things</h3>
+          
+          <p class="narrative-p">
+            I spend my time at the intersection of writing code and trying to make sense of the world. For me, building software is not about chasing fleeting tech trends or creating platforms filled with corporate jargon. It's about <span class="highlight">solving real-world problems</span>, creating layouts that are actually accessible, and finding joy in the craft of coding.
+          </p>
+
+          <p class="narrative-p">
+            Most of my growth occurs when things break. I've spent days debugging alignment glitches, and each mistake has made me a better builder. I value <span class="highlight cyan">clean execution</span>, honest layouts, and direct communication.
+          </p>
+
+          <p class="narrative-p">
+            When my screen is off, I'm usually reading, studying editorial layouts, or trying to construct something physical. I believe that <span class="highlight orange">consistency</span>, continuous small improvements, and genuine curiosity are the only ways to build a meaningful life.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION (PHOTOGRAPHIC COLLAGE) -->
+    <section id="gallery">
+      <div class="section-header-wrapper">
+        <h2 class="section-title reveal" data-rotation="1.2">03 / Photographic Journal</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1: Portrait Polaroid -->
+        <article class="gallery-item gallery-item-1 reveal" data-rotation="1">
+          <img src="images/photo-1.jpg" alt="Self-portrait in reflective window shadow under morning sunlight">
+          <div class="gallery-item-caption">
+            <span>#01 / Self reflection</span>
+            <span>12.04.26</span>
+          </div>
+        </article>
+
+        <!-- Photo 2: Square Polaroid -->
+        <article class="gallery-item gallery-item-2 reveal" data-rotation="-1.5">
+          <img src="images/photo-2.jpg" alt="Close-up of coffee stains and notes on a grid-ruled notebook page">
+          <div class="gallery-item-caption">
+            <span>#02 / Notebook details</span>
+            <span>18.04.26</span>
+          </div>
+        </article>
+
+        <!-- Photo 3: Landscape Polaroid -->
+        <article class="gallery-item gallery-item-3 reveal" data-rotation="0.5">
+          <img src="images/photo-3.jpg" alt="A stack of vintage typography manual book titles resting on a wood workbench">
+          <div class="gallery-item-caption">
+            <span>#03 / Book stack</span>
+            <span>02.05.26</span>
+          </div>
+        </article>
+
+        <!-- Photo 4: Landscape Polaroid -->
+        <article class="gallery-item gallery-item-4 reveal" data-rotation="-1">
+          <img src="images/photo-4.jpg" alt="Abstract geometrical shadow silhouettes cast on architectural concrete surfaces">
+          <div class="gallery-item-caption">
+            <span>#04 / Shapes & light</span>
+            <span>19.05.26</span>
+          </div>
+        </article>
+
+        <!-- Photo 5: Wide Landscape Polaroid -->
+        <article class="gallery-item gallery-item-5 reveal" data-rotation="1.2">
+          <img src="images/photo-5.jpg" alt="Perspective view of railway tracks receding through misty evergreen pine trees">
+          <div class="gallery-item-caption">
+            <span>#05 / Lines of escape</span>
+            <span>08.06.26</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOCIALS SECTION -->
+    <section id="socials">
+      <div class="section-header-wrapper">
+        <h2 class="section-title reveal" data-rotation="1">04 / Find me online</h2>
+      </div>
+
+      <div class="socials-grid">
+        
+        <!-- Instagram Card -->
+        <a href="https://instagram.com/hokispace" target="_blank" rel="noopener noreferrer" class="card social-card card-instagram tilt-card reveal" data-rotation="-1.5" id="social-link-instagram">
+          <div class="social-card-top">
+            <svg class="social-icon" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <div class="social-link-indicator" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="social-card-bottom">
+            <span class="platform-name">Instagram</span>
+            <span class="username">@hokispace</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn Card -->
+        <a href="https://linkedin.com/in/hokispace" target="_blank" rel="noopener noreferrer" class="card social-card card-linkedin reveal" data-rotation="1.5" id="social-link-linkedin">
+          <div class="social-card-top">
+            <svg class="social-icon" viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-hidden="true">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <div class="social-link-indicator" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="social-card-bottom">
+            <span class="platform-name">LinkedIn</span>
+            <span class="username">in/hokispace</span>
+          </div>
+        </a>
+
+        <!-- TikTok Card -->
+        <a href="https://tiktok.com/@hokispace" target="_blank" rel="noopener noreferrer" class="card social-card card-tiktok tilt-card reveal" data-rotation="-1" id="social-link-tiktok">
+          <div class="social-card-top">
+            <svg class="social-icon" viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-hidden="true">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23 1.02.99 2.37 1.52 3.78 1.59v3.59c-1.39-.06-2.74-.67-3.72-1.68-.17-.18-.32-.38-.46-.59-.06.07-.07.18-.07.27V13.8c-.04 2.11-.94 4.14-2.52 5.51-1.63 1.39-3.86 1.97-5.96 1.56-2.1-.41-3.89-1.89-4.75-3.86-1-2.25-.57-5.01 1.09-6.84 1.52-1.69 3.86-2.4 6.07-1.87v3.66c-.95-.31-2.01-.11-2.79.49-.86.66-1.22 1.79-.93 2.85.29 1.06 1.25 1.83 2.35 1.9 1.15.08 2.21-.63 2.58-1.73.08-.24.11-.5.11-.75V.02h.06z"/>
+            </svg>
+            <div class="social-link-indicator" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="social-card-bottom">
+            <span class="platform-name">TikTok</span>
+            <span class="username">@hokispace</span>
+          </div>
+        </a>
+
+        <!-- GitHub Card (Unique wide console design row) -->
+        <a href="https://github.com/hokispace" target="_blank" rel="noopener noreferrer" class="card social-card card-github tilt-card reveal" data-rotation="0.5" id="social-link-github">
+          <div class="social-card-top">
+            <svg class="social-icon" viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-hidden="true">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <div class="social-link-indicator" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="terminal-body" aria-hidden="true">
+            <div><span class="terminal-prompt">hoki@hokispace:~$</span> git log --oneline</div>
+            <div class="terminal-response">* a3b4c10: fail fast, learn faster.</div>
+            <div class="terminal-response">* d5e6f11: rewrite CSS grid layout again.</div>
+            <div class="terminal-response">* 7b8c9d0: initial commitment to growth.</div>
+          </div>
+
+          <div class="social-card-bottom">
+            <span class="platform-name">GitHub</span>
+            <span class="username">@hokispace</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- INFINITE SCROLL TICKER FOOTER -->
+  <footer class="footer-marquee">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        KEEP LEARNING • KEEP BUILDING • KEEP FAILING • IMPROVE A LITTLE EVERY DAY • KEEP LEARNING • KEEP BUILDING • KEEP FAILING • IMPROVE A LITTLE EVERY DAY •&nbsp;
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        KEEP LEARNING • KEEP BUILDING • KEEP FAILING • IMPROVE A LITTLE EVERY DAY • KEEP LEARNING • KEEP BUILDING • KEEP FAILING • IMPROVE A LITTLE EVERY DAY •&nbsp;
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p>
+      <span>&copy; 2026 Hoki. Built with HTML, CSS, and minimal JS.</span>
+      <span>No tracking. No cookies. Just raw progress.</span>
+    </p>
+  </div>
+
+  <!-- Separate External JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>

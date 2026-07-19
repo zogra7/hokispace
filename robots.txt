@@ -1,0 +1,7 @@
+# Robots.txt for Hokispace.org
+# Crawling instructions for search engines
+
+User-agent: *
+Allow: /
+
+Sitemap: https://hokispace.org/sitemap.xml
